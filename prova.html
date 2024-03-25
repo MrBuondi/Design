@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body, h1 {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #company-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    #company-logo img {
+      width: 150px;
+    }
+    #usb-key-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      background-color: #f0f0f0;
+    }
+    #usb-key {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    #usb-key img {
+      width: 450px;
+    }
+    #usb-key h1 {
+      font-size: 36px;
+      color: #333;
+    }
+    #usb-key p {
+      font-size: 20px;
+      color: #666;
+    }
+    #usb-key button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+    #usb-key button:hover {
+    background-color: #4cae4c;
+  }
+  </style>
+</head>
+<body>
+  <div id="company-logo">
+    <img src="logo.png" alt="Company Logo">
+  </div>
+  <div id="usb-key-container">
+    <div id="usb-key">
+      <img src="chiavetta.jpg" alt="USB Key">
+      <h1>TDK Chiavetta USB</h1>
+      <p>La soluzione perfetta per tutte le vostre esigenze di archiviazione. Resistente, sicura e con una velocità di trasferimento fulminea!</p>
+      <button id="buyButton">Acquista Ora!</button>
+    </div>
+  </div>
+  <script>
+    document.getElementById('buyButton').addEventListener('click', function() {
+    alert('Grazie per il tuo acquisto!');
+  });
+  </script>
+</body>
+</html>
